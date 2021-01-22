@@ -1,0 +1,18 @@
+{
+    "id": "lmh.77",
+    "name": "lmh",
+    "author": "@lmh77",
+    "icon": "",
+    "repo": "https://github.com/lmh77",
+    "apps": [
+        {
+            "id": "dy",
+            "name": "抖音",
+            "keys": [
+                "dyheadlist",
+                "dyurl",
+                "dycodesub"
+            ]
+        }
+    ]
+}
