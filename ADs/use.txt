@@ -1,0 +1,26 @@
+vscode
+去除注释行
+^#.*\n
+^//.*
+
+替换host开头
+^host.*?
+DOMAIN
+
+^DOMAIN-keyword.*?
+
+去除空行
+^\s*(?=\r?$)\n
+
+纠正大小写
+^DOMAIN-suffix.*?
+DOMAIN-SUFFIX
+
+去除空格
+
+去除,REJECT ,reject ,Advertising ,AdvertisingLite ,AdvertisingTest ,AdBlock的结尾
+,REJECT$
+(,Advertising.*)$
+(,Ad.*)$
+
+WSL sort去重排序
