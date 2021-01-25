@@ -8,6 +8,7 @@ vscode
 DOMAIN
 
 ^DOMAIN-keyword.*?
+DOMAIN-KEYWORD
 
 去除空行
 ^\s*(?=\r?$)\n
@@ -19,8 +20,11 @@ DOMAIN-SUFFIX
 去除空格
 
 去除,REJECT ,reject ,Advertising ,AdvertisingLite ,AdvertisingTest ,AdBlock的结尾
-,REJECT$
-(,Advertising.*)$
+(,Advertising*)$
+(,AdvertisingLite*)$
+(,REJECT*)$
 (,Ad.*)$
+(,Adblock*)$
 
 WSL sort去重排序
+sort -u 
