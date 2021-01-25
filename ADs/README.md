@@ -1,6 +1,11 @@
 # ADsReject：
-合并一些Reject规则并去重 订阅：https://raw.githubusercontent.com/lmh77/A/main/ADs/ADs.txt
+合并一些Reject规则并去重 订阅：
+https://raw.githubusercontent.com/lmh77/A/main/ADs/ADs.txt
 
+https://raw.githubusercontent.com/lmh77/A/main/ADs/ADs.test
+
+
+以下为规则来源：
 
 
 https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list
