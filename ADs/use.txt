@@ -28,3 +28,17 @@ DOMAIN-SUFFIX
 
 WSL sort去重排序
 sort -u 
+DOMAIN-SUFFIX,t1.baidu.com
+DOMAIN-SUFFIX,t2.baidu.com
+DOMAIN-SUFFIX,t3.baidu.com
+DOMAIN-SUFFIX,t4.baidu.com
+DOMAIN-SUFFIX,t5.baidu.com
+DOMAIN-SUFFIX,t6.baidu.com
+DOMAIN-SUFFIX,t7.baidu.com
+DOMAIN-SUFFIX,t8.baidu.com
+DOMAIN-SUFFIX,t9.baidu.com
+DOMAIN-SUFFIX,t10.baidu.com
+DOMAIN-SUFFIX,t11.baidu.com
+DOMAIN-SUFFIX,t12.baidu.com
+
+DOMAIN,dss0.bdstatic.com
