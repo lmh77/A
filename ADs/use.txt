@@ -28,6 +28,13 @@ DOMAIN-SUFFIX
 
 WSL sort去重排序
 sort -u 
+
+
+以下规则放行，Safari百度搜索
+
+DOMAIN-SUFFIX,boxer.baidu.com
+DOMAIN-SUFFIX,sp1.baidu.com
+DOMAIN-SUFFIX,sp2.baidu.com
 DOMAIN-SUFFIX,t1.baidu.com
 DOMAIN-SUFFIX,t2.baidu.com
 DOMAIN-SUFFIX,t3.baidu.com
@@ -40,5 +47,4 @@ DOMAIN-SUFFIX,t9.baidu.com
 DOMAIN-SUFFIX,t10.baidu.com
 DOMAIN-SUFFIX,t11.baidu.com
 DOMAIN-SUFFIX,t12.baidu.com
-
 DOMAIN,dss0.bdstatic.com
