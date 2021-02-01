@@ -6,12 +6,10 @@
     "repo": "https://github.com/lmh77",
     "apps": [
         {
-            "id": "dy",
-            "name": "抖音",
+            "id": "查询10010",
+            "name": "queryunicom",
             "keys": [
-                "dyheadlist",
-                "dyurl",
-                "dycodesub"
+                "lmh_query10010"
             ]
         }
     ]
