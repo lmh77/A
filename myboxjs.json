@@ -1,0 +1,49 @@
+{
+    "apps": [
+        {
+            "author": "@lmh",
+            "icons": "",
+            "id": "10010ck",
+            "keys": [
+                "10010ck"
+            ],
+            "name": "薅羊毛",
+            "repo": "",
+            "script": "",
+            "settings": [
+                {
+                    "desc": "整段headers",
+                    "id": "10010ck",
+                    "name": "联通",
+                    "placeholder": "",
+                    "val": ""
+                }
+            ]
+        },
+        {
+            "author": "@lmh",
+            "icons": "",
+            "id": "",
+            "keys": [
+                "bbk_ck"
+            ],
+            "name": "",
+            "repo": "",
+            "script": "",
+            "settings": [
+                {
+                    "desc": "",
+                    "id": "bbk_ck",
+                    "name": "步步宝",
+                    "placeholder": "",
+                    "val": ""
+                }
+            ]
+        }
+    ],
+    "author": "@lmh77",
+    "icon": "https://avatars.githubusercontent.com/u/62322755?s=460&u=55e52b21ec45671f8af680e0bb36ae63ee6fcd61&v=4",
+    "id": "lmh.app.sub",
+    "name": "订阅",
+    "repo": "https://github.com/lmh77"
+}
