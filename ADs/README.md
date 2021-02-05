@@ -1,9 +1,8 @@
 # ADsReject：
 合并一些Reject规则并去重【约164000+】订阅：
 
-* [ADs.txt](https://raw.githubusercontent.com/lmh77/A/main/ADs/ADs.txt)
+* [ADs.txt](https://raw.githubusercontent.com/lmh77/A/main/rule/reject.list)
 
-* [ADs.test](https://raw.githubusercontent.com/lmh77/A/main/ADs/ADs.test)
 
 
 以下为本规则收集来源：
