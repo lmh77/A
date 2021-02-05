@@ -3,18 +3,18 @@
         {
             "author": "@lmh",
             "icons": "",
-            "id": "10010ck",
+            "id": "unicom10010",
             "keys": [
                 "10010ck"
             ],
-            "name": "薅羊毛",
+            "name": "联通",
             "repo": "",
             "script": "",
             "settings": [
                 {
-                    "desc": "整段headers",
+                    "desc": "",
                     "id": "10010ck",
-                    "name": "联通",
+                    "name": "整段headers",
                     "placeholder": "",
                     "val": ""
                 }
@@ -23,18 +23,18 @@
         {
             "author": "@lmh",
             "icons": "",
-            "id": "",
+            "id": "bbbck",
             "keys": [
-                "bbk_ck"
+                "bbb_ck"
             ],
-            "name": "",
+            "name": "薅羊毛",
             "repo": "",
             "script": "",
             "settings": [
                 {
                     "desc": "",
-                    "id": "bbk_ck",
-                    "name": "步步宝",
+                    "id": "bbb_ck",
+                    "name": "步步宝ck",
                     "placeholder": "",
                     "val": ""
                 }
@@ -44,6 +44,6 @@
     "author": "@lmh77",
     "icon": "https://avatars.githubusercontent.com/u/62322755?s=460&u=55e52b21ec45671f8af680e0bb36ae63ee6fcd61&v=4",
     "id": "lmh.app.sub",
-    "name": "订阅",
+    "name": "lmh订阅",
     "repo": "https://github.com/lmh77"
 }
