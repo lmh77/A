@@ -5,7 +5,7 @@
 hostname = m.client.10010.com
 
 [Script]
-^https?:\/\/m.client.10010.com\/mobileservicequery\/operationservice\/queryOcsPackageFlowLeftContent script-path=https://raw.githubusercontent.com/lmh77/A/main/10010/getheader.js,timeout=10, enabled=false, tag=联通获取header
+http-request ^https?:\/\/m.client.10010.com\/mobileservicequery\/operationservice\/queryOcsPackageFlowLeftContent script-path=https://raw.githubusercontent.com/lmh77/A/main/10010/getheader.js,timeout=10, enabled=false, tag=联通获取header
 cron "55 23 * * *" script-path=https://raw.githubusercontent.com/lmh77/A/main/10010/query.js,enabled=false, tag=查询流量奖励与用量
 cron "0 0 * * *" script-path=https://raw.githubusercontent.com/lmh77/A/main/10010/exchange.js,enabled=false, tag=兑换1G日包
 ```
