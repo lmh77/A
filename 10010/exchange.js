@@ -1,10 +1,9 @@
-
 const lmh = init()
 const url = "https://m.client.10010.com/MyAccount/exchangeDFlow/exchange.htm?userLogin=76_80_81_82_83_81_81_77_81_77_84_";
 const body = "productId=ff80808166c5ee6701676ce21fd14716&productName=1GB%E6%B5%81%E9%87%8F%E6%97%A5%E5%8C%85&userLogin=76_80_81_82_83_81_81_77_81_77_84_&ebCount=1000000&pageFrom=4";
-ck = lmh.getdata("10010ck")
-cks = JSON.parse(ck)
-const headers = cks
+lmh_10010 = lmh.getdata("10010ck")
+headers_10010 = JSON.parse(lmh_10010)
+const headers = headers_10010
 const request = {
     url: url,
     headers: headers,
@@ -13,16 +12,15 @@ const request = {
 
 lmh.post(request, function (error, response, data) {
     try {
-        lldata = data
+        exchange_result = data
             .replace(/<(style|script|iframe)[^>]*?>[\s\S]+?<\/\1\s*>/gi, "")
             .replace(/<[^>]+?>/g, "")
             .replace(/\s+/g, " ")
             .replace(/ /g, "")
             .replace(/>/g, "");
-        lmh.log(lldata)
-        lmh.msg('联通流量兑换', '', lldata)
+        lmh.log(exchange_result)
+        lmh.msg('联通流量兑换', '', exchange_result)
         lmh.done();
-
     } catch (e) {
         lmh.log(e)
         lmh.done();
