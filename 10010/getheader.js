@@ -1,7 +1,4 @@
-/*
-^https?:\/\/m.client.10010.com\/mobileservicequery\/operationservice\/queryOcsPackageFlowLeftContent url script-request-header https://raw.githubusercontent.com/lmh77/A/main/10010/getheader.js
 
-*/
 const cookieName = '中国联通'
 const lmh_10010ck_Key = '10010ck'
 const lmh = init()
@@ -9,7 +6,7 @@ const lmh = init()
 if ($request && $request.method != 'OPTIONS' && $request.url.indexOf('queryOcsPackageFlowLeftContent') >= 0) {
     const lmh_10010ck_Val = JSON.stringify($request.headers)
     if (lmh_10010ck_Val) lmh.setdata(lmh_10010ck_Val, lmh_10010ck_Key)
-    lmh.msg(cookieName, `获取成功`, ``)
+    lmh.msg(cookieName, `获取headers成功`, ``)
 }
 
 function init() {
