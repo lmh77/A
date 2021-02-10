@@ -39,6 +39,26 @@
                     "val": ""
                 }
             ]
+        },
+ {
+            "author": "@lmh",
+            "icons": "",
+            "id": "dy",
+            "keys": [
+                "dyheaderlist"
+            ],
+            "name": "抖音",
+            "repo": "",
+            "script": "",
+            "settings": [
+                {
+                    "desc": "",
+                    "id": "dyheaderlist",
+                    "name": "抖音极速版",
+                    "placeholder": "",
+                    "val": ""
+                }
+            ]
         }
     ],
     "author": "@lmh77",
