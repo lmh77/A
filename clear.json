@@ -19,6 +19,26 @@
                     "val": ""
                 }
             ]
+        },
+        {
+            "author": "@lmh",
+            "icons": "",
+            "id": "clearck",
+            "keys": [
+                "dyurl"
+            ],
+            "name": "clear",
+            "repo": "",
+            "script": "",
+            "settings": [
+                {
+                    "desc": "",
+                    "id": "dyurl",
+                    "name": "clearck",
+                    "placeholder": "",
+                    "val": ""
+                }
+            ]
         }
     ],
     "author": "@lmh77",
