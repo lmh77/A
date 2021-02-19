@@ -3,38 +3,18 @@
         {
             "author": "@lmh",
             "icons": "",
-            "id": "unicom10010",
+            "id": "clearck",
             "keys": [
-                "10010ck"
+                "dyheadlist"
             ],
-            "name": "联通",
+            "name": "clear",
             "repo": "",
             "script": "",
             "settings": [
                 {
                     "desc": "",
-                    "id": "10010ck",
-                    "name": "整段headers",
-                    "placeholder": "",
-                    "val": ""
-                }
-            ]
-        },
-        {
-            "author": "@lmh",
-            "icons": "",
-            "id": "bbbck",
-            "keys": [
-                "bbb_ck"
-            ],
-            "name": "步步宝",
-            "repo": "",
-            "script": "",
-            "settings": [
-                {
-                    "desc": "",
-                    "id": "bbb_ck",
-                    "name": "步步宝ck",
+                    "id": "dyheadlist",
+                    "name": "clearck",
                     "placeholder": "",
                     "val": ""
                 }
