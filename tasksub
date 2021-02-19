@@ -1,6 +1,4 @@
 31 3 8 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=哔哩哔哩, img-url=scribble.variable.system, enabled=true
-0 0,8,12,16,20 * * * https://raw.githubusercontent.com/lmh77/A/main/10010/query.js, tag=查询流量奖励与用量, img-url=tray.and.arrow.up.fill.system, enabled=true
-1 0 0 * * * https://raw.githubusercontent.com/lmh77/A/main/10010/exchange.js, tag=兑换1G日包, img-url=tray.and.arrow.down.system, enabled=false
 5 5 * * * https://gitee.com/lmh77/JSFiles/raw/master/JS/hupu.js, tag=虎扑金豆, img-url=sportscourt.system, enabled=true
 0 9 * * * https://gitee.com/lmh77/JSFiles/raw/master/JS/day.js, tag=生日倒计时, img-url=https://raw.fastgit.org/Orz-3/task/master/birthday.png, enabled=false
 59 0-21/3 * * * https://raw.fastgit.org/Peng-YM/QuanX/master/Tasks/caiyun.js, tag=彩云天气, img-url=https://raw.fastgit.org/Orz-3/task/master/caiyun.png, enabled=false
