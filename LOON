@@ -144,7 +144,7 @@ cron "30 7 * * *" script-path=http://192.168.1.123:8088/api/public/dl/T0SypBt3/j
 cron "5 0 * * *" script-path=http://192.168.1.123:8088/api/public/dl/T0SypBt3/jx_sign.js,tag=京喜签到
 
 # 小米运动
-cron "15 17 * * *" script-path=http://192.168.1.123:8088/api/public/dl/T0SypBt3/xmSports.js, tag=小米运动
+cron "15 17 * * *" script-path=http://192.168.1.123:8088/api/public/dl/T0SypBt3/backUp/xmSports.js, tag=小米运动
 
 # 小米运动获取Token
 http-response ^https:\/\/account\.huami\.com\/v2\/client\/login script-path=http://192.168.1.123:8088/api/public/dl/T0SypBt3/backUp/xmSports.js, requires-body=true, timeout=3600, tag=小米运动获取Token

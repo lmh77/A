@@ -40,4 +40,3 @@
 55 23 * * * http://192.168.1.123:8088/api/public/dl/T0SypBt3/jd_unsubscribe.js, tag=取关京东店铺商品, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 30 7 * * * http://192.168.1.123:8088/api/public/dl/T0SypBt3/jd_xgyl.js, tag=小鸽有礼2, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_xgyl.png, enabled=true
 5 0 * * * http://192.168.1.123:8088/api/public/dl/T0SypBt3/jx_sign.js, tag=京喜签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
-15 17 * * * http://192.168.1.123:8088/api/public/dl/T0SypBt3/xmSports.js, tag=小米运动, img-url=https://raw.githubusercontent.com/58xinian/icon/master/xmyd.png, enabled=true
