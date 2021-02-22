@@ -55,9 +55,9 @@ function run() {
             result =
                 result+
                 "💵  待兑换:" + "\n" +
-                "🥇  日流量:" + day + "MB    " +tongxin+"\n"
-                "🥈  周流量:" + week + "    " +jiangli+"\n"
-                "🥉  月流量:" + mon +"    " +dingxiang
+                "🥇  日流量:" + day + "MB    " +"\n"
+                "🥈  周流量:" + week + "    " +"\n"
+                "🥉  月流量:" + mon +"    " 
             //lmh.log(result)
         } catch (e) {
             lmh.log(e);
