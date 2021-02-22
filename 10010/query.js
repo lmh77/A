@@ -31,6 +31,7 @@ function run() {
             jiangli = jifen[1].name + jifen[1].number
             dingxiang = jifen[2].name + jifen[2].number
             jf = tongxin+","+jiangli+","+dingxiang
+            lmh.log(jf)
             lmh.done();
 
         } catch (e) {
