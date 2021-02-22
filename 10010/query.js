@@ -30,7 +30,7 @@ function run() {
             tongxin = jifen[0].name + jifen[0].number
             jiangli = jifen[1].name + jifen[1].number
             dingxiang = jifen[2].name + jifen[2].number
-            result = tongxin+","+jiangli+","+dingxiang
+            jf = tongxin+","+jiangli+","+dingxiang
             lmh.done();
 
         } catch (e) {
@@ -53,11 +53,10 @@ function run() {
             week = MB_result.match(/多日流量(\S*)月流量/)[1];
             mon = MB_result.match(/月流量(\S*)流量/)[1];
             result =
-                result+
-                "💵  待兑换:" + "\n" +
-                "🥇  日流量:" + day + "MB    " +"\n"
-                "🥈  周流量:" + week + "    " +"\n"
-                "🥉  月流量:" + mon +"    " 
+            "💵    待兑换:" + "\n" +
+            "🥇    日流量:" + day + "MB\n" +
+            "🥈    周流量:" + week + "\n" +
+            "🥉    月流量:" + mon 
             //lmh.log(result)
         } catch (e) {
             lmh.log(e);
@@ -85,7 +84,7 @@ function run() {
 
             }
             console.log(result)
-            lmh.msg("中国联通", "", result)
+            lmh.msg("中国联通", "", jf+"\n"+result)
             lmh.done()
         } catch (e) {
             lmh.log(e)
