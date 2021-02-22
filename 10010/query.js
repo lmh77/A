@@ -5,6 +5,7 @@ const headers = headers_10010
 function run() {
     const url1 = "https://m.client.10010.com/MyAccount/trafficController/myAccount.htm?flag=1&cUrl=https://m.client.10010.com/myPrizeForActivity/querywinninglist.htm?pageSign=1";
     const url2 = "https://m.client.10010.com/mobileservicequery/operationservice/queryOcsPackageFlowLeftContent";
+    const url3 = "https://m.client.10010.com/welfare-mall-front/mobile/show/bj2205/v2/Y";
     const body = "";
     const request1 = {
         url: url1,
@@ -16,6 +17,26 @@ function run() {
         headers: headers,
         body: body
     };
+    const request3 = {
+        url: url3,
+        headers: headers,
+        body: body
+    };
+    lmh.post(request3, function (error, response, data) {
+        try {
+            //lmh.log(data)
+            const jsons = JSON.parse(data)
+            const jifen =jsons.resdata.data
+            tongxin = jifen[0].name + jifen[0].number
+            jiangli = jifen[1].name + jifen[1].number
+            dingxiang = jifen[2].name + jifen[2].number
+            lmh.done();
+
+        } catch (e) {
+            lmh.log(e)
+            lmh.done();
+        }
+    });
     lmh.get(request1, function (error, response, data) {
         try {
             query_result = data
@@ -31,10 +52,10 @@ function run() {
             week = MB_result.match(/多日流量(\S*)月流量/)[1];
             mon = MB_result.match(/月流量(\S*)流量/)[1];
             result =
-                "💵    待兑换:" + "\n" +
-                "🥇    日流量:" + day + "MB\n" +
-                "🥈    周流量:" + week + "\n" +
-                "🥉    月流量:" + mon
+                "💵  待兑换:" + "\n" +
+                "🥇  日流量:" + day + "MB    " +tongxin+"\n"
+                "🥈  周流量:" + week + "    " +jiangli+"\n"
+                "🥉  月流量:" + mon +"    " +dingxiang
             //lmh.log(result)
         } catch (e) {
             lmh.log(e);
