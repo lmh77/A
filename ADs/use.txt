@@ -20,17 +20,21 @@ DOMAIN-SUFFIX
 去除空格
 
 去除,REJECT ,reject ,Advertising ,AdvertisingLite ,AdvertisingTest ,AdBlock的结尾
-(,Advertising*)$
-(,AdvertisingLite*)$
-(,REJECT*)$
-(,Ad.*)$
-(,Adblock*)$
+(,Advertising)$
+(,AdvertisingLite)$
+(,AdvertisingTest)$
+(,REJECT)$
+(,Adblock)$
 
 WSL sort去重排序
 sort -u 
 
 
-以下规则放行，Safari百度搜索
+以下规则放行，Safari百度搜索,联通营业厅
+DOMAIN,ad.10010.com
+DOMAIN,smartad.10010.com
+DOMAIN-SUFFIX,ad.10010.com
+DOMAIN-SUFFIX,smartad.10010.com
 
 DOMAIN-SUFFIX,boxer.baidu.com
 DOMAIN-SUFFIX,sp1.baidu.com
