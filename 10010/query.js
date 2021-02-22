@@ -30,6 +30,7 @@ function run() {
             tongxin = jifen[0].name + jifen[0].number
             jiangli = jifen[1].name + jifen[1].number
             dingxiang = jifen[2].name + jifen[2].number
+            result = tongxin+","+jiangli+","+dingxiang
             lmh.done();
 
         } catch (e) {
@@ -52,6 +53,7 @@ function run() {
             week = MB_result.match(/多日流量(\S*)月流量/)[1];
             mon = MB_result.match(/月流量(\S*)流量/)[1];
             result =
+                result+
                 "💵  待兑换:" + "\n" +
                 "🥇  日流量:" + day + "MB    " +tongxin+"\n"
                 "🥈  周流量:" + week + "    " +jiangli+"\n"
