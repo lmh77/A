@@ -22,9 +22,9 @@ function run() {
             lmh.log(jf)
             result =
             "💵    待兑换:" + "\n" +
-            "🥇    通信积分:" + tongxin + "\n" +
-            "🥈    奖励积分:" + jiangli + "\n" +
-            "🥉    定向积分:" + dingxiang
+            "🥇    " + tongxin + "\n" +
+            "🥈    " + jiangli + "\n" +
+            "🥉    " + dingxiang
             lmh.log(result)
             lmh.msg("中国联通", "",result)
             lmh.done();
