@@ -18,14 +18,14 @@ function run() {
             var b = a.details
             var i = 0,
                 len = b.length
+                result=""
             for (; i < len; i++) {
                 const name = b[i].addUpItemName
-                result=""
                 if (name == undefined) {
                     // 到期b[i].endDate 
-                    result = result + b[i].feePolicyName + ":\n使用" + b[i].use + "MB" + b[i].remain + "MB " + "\n"
+                    result = result + b[i].feePolicyName + ":使用" + b[i].use + "MB."+ "\n"
                 } else {
-                    result = result + b[i].addUpItemName + ":\n使用" + b[i].use + "MB剩余" + b[i].remain + "MB " + "\n"
+                    result = result + b[i].addUpItemName + ":使用" + b[i].use + "MB剩余" + b[i].remain + "MB." + "\n"
                 }
             }
             lmh.log(result)
