@@ -23,7 +23,7 @@ function run() {
                 const name = b[i].addUpItemName
                 if (name == undefined) {
                     // 到期b[i].endDate 
-                    result = result + b[i].feePolicyName + ":使用" + b[i].use + "MB."+ "\n"
+                    result = result + "\n" + b[i].feePolicyName + ":使用" + b[i].use + "MB."+ "\n"
                 } else {
                     result = result + b[i].addUpItemName + ":使用" + b[i].use + "MB剩余" + b[i].remain + "MB." + "\n"
                 }
