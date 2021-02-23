@@ -25,6 +25,7 @@ function run() {
             "🥇    通信积分:" + tongxin + "\n" +
             "🥈    奖励积分:" + jiangli + "\n" +
             "🥉    定向积分:" + dingxiang
+            lmh.log(result)
             lmh.msg("中国联通", "",result)
             lmh.done();
 

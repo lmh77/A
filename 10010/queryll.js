@@ -20,15 +20,15 @@ function run() {
                 len = b.length
             for (; i < len; i++) {
                 const name = b[i].addUpItemName
-
+                result=""
                 if (name == undefined) {
                     // 到期b[i].endDate 
-                    result = "\n" + b[i].feePolicyName + ":\n使用" + b[i].use + "MB"+ "\n"
+                    result = result + b[i].feePolicyName + ":\n使用" + b[i].use + "MB" + b[i].remain + "MB " + "\n"
                 } else {
-                    result = "\n" + b[i].addUpItemName + ":\n使用" + b[i].use + "MB剩余" + b[i].remain + "MB " + "\n"
+                    result = result + b[i].addUpItemName + ":\n使用" + b[i].use + "MB剩余" + b[i].remain + "MB " + "\n"
                 }
             }
-            console.log(result)
+            lmh.log(result)
             lmh.msg("中国联通", "",result)
             lmh.done()
         } catch (e) {
