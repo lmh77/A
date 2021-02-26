@@ -30,6 +30,7 @@ function run() {
             "🥉    月流量:" + mon 
             lmh.log(result)
             lmh.msg("中国联通", "",result)
+            lmh.done()
         } catch (e) {
             lmh.log(e);
             lmh.done()
