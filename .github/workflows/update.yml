@@ -21,13 +21,13 @@ jobs:
     - name: Update
       run: |
         cd elecv2p
-        bash elecv2p.sh>lxk0301_cdn_elecv2p.json
+        bash elecv2p.sh>lxk0301_cdn_elecv2p.json.test
     - name: commit
       run: |
         cd elecv2p
         git config --global user.email "lmhseven@qq.com"
         git config --global user.name "lmh77"
-        git add lxk0301_cdn_elecv2p.json
+        git add .
         git commit -m "update" -a
 
 
