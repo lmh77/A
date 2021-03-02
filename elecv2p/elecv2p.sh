@@ -9,7 +9,6 @@ SubDesc=elecv2p订阅
 #作者
 SubAuthor=lmh77
 
-
 #cron列表，临时生成cron.list用于读取，cron带星号不知道怎么处理筛选，最后执行删除
 curl -s $URL | grep ^cron | cut -f2 -d\"|sed 's/[ \t]*$//g'|sed 's/^/"&/g'|sed 's/$/&"/g'>cron.list
 #地址列表
