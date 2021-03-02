@@ -25,6 +25,9 @@ jobs:
     - name: commit
       run: |
         cd elecv2p
+        git config --global user.email "lmhseven@qq.com"
+        git config --global user.name "lmh77"
         git add lxk0301_cdn_elecv2p.json
         git commit -m "update" -a
+
 
