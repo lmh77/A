@@ -3,6 +3,7 @@
 Subname=JDTask
 #需要转换的LOON订阅URL
 URL=https://jdsharedresourcescdn.azureedge.net/jdresource/lxk0301_LoonTask.conf
+# URL=http://192.168.1.123:8088/api/public/dl/P4ySm9yH/jd/scripts/Loon/lxk0301_LoonTask.conf
 #订阅描述
 SubDesc=elecv2p订阅
 #作者
