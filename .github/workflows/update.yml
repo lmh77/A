@@ -14,10 +14,6 @@ jobs:
     - name: set-timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
 
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
     - name: Update
       run: |
         cd elecv2p
@@ -29,5 +25,8 @@ jobs:
         git config --global user.name "lmh77"
         git add .
         git commit -m "update" -a
-
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
 
