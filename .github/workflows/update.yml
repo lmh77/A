@@ -17,7 +17,7 @@ jobs:
     - name: Update
       run: |
         cd elecv2p
-        bash elecv2p.sh>lxk0301_cdn_elecv2p.json.test
+        bash elecv2p.sh>lxk0301_cdn_elecv2p.json
     - name: commit
       run: |
         cd elecv2p
