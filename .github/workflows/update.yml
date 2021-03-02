@@ -1,25 +1,30 @@
+name: update
 on:
   workflow_dispatch:
   schedule:
     - cron: "0 */8 * * *"
 jobs:
   build:
+    if: github.event.repository.owner.id == github.event.sender.id
     runs-on: ubuntu-latest
+
     steps:
-      - name: checkout actions
-      - uses: actions/checkout@v1
-      - name: set-time
-        run: sudo timedatectl set-timezone 'Asia/Shanghai'
-      - name: Update
-        run: |
-          cd elecv2p
-          bash elecv2p.sh>lxk0301_cdn_elecv2p.json
-      - name: commit
-        run: |
-          cd elecv2p
-          git add lxk0301_cdn_elecv2p.json
-          git commit -m "update" -a
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+    - uses: actions/checkout@v2
+
+    - name: set-timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Update
+      run: |
+        cd elecv2p
+        bash elecv2p.sh>lxk0301_cdn_elecv2p.json
+    - name: commit
+      run: |
+        cd elecv2p
+        git add lxk0301_cdn_elecv2p.json
+        git commit -m "update" -a
+
