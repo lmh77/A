@@ -2,7 +2,7 @@
 	"name":"JDTask",
 	"desc":"elecv2p订阅",
 	"author":"lmh77",
-	"date":"2021/03/03__16:25:20",
+	"date":"2021/03/07__01:14:27",
 	"surl":"https://raw.githubusercontent.com/lmh77/A/main/elecv2p/lxk0301_cdn_elecv2p.json",
 	"list":[
 		{
@@ -61,6 +61,11 @@
 			"time":"10 12 * * *",
 			"job":{"type":"runjs","target":"https://jdsharedresourcescdn.azureedge.net/jdresource/jd_crazy_joy_bonus.js"}},
 		{
+			"name":"crazyJoy挂机",
+			"type":"cron",
+			"time":"10 1,12 * * *",
+			"job":{"type":"runjs","target":"https://jdsharedresourcescdn.azureedge.net/jdresource/jd_crazy_joy_coin.js"}},
+		{
 			"name":"天天提鹅",
 			"type":"cron",
 			"time":"10 * * * *",
@@ -70,6 +75,11 @@
 			"type":"cron",
 			"time":"10 * * * *",
 			"job":{"type":"runjs","target":"https://jdsharedresourcescdn.azureedge.net/jdresource/jd_dreamFactory.js"}},
+		{
+			"name":"京东家庭号",
+			"type":"cron",
+			"time":"1 12,23 * * *",
+			"job":{"type":"runjs","target":"https://jdsharedresourcescdn.azureedge.net/jdresource/jd_family.js"}},
 		{
 			"name":"她的节享京豆",
 			"type":"cron",
@@ -136,6 +146,11 @@
 			"time":"10 0 * * *",
 			"job":{"type":"runjs","target":"https://jdsharedresourcescdn.azureedge.net/jdresource/jd_kd.js"}},
 		{
+			"name":"京东直播",
+			"type":"cron",
+			"time":"10-20/5 12 * * *",
+			"job":{"type":"runjs","target":"https://jdsharedresourcescdn.azureedge.net/jdresource/jd_live.js"}},
+		{
 			"name":"京东摇钱树",
 			"type":"cron",
 			"time":"3 0-23/2 * * *",
@@ -200,11 +215,6 @@
 			"type":"cron",
 			"time":"8 0-23/3 * * *",
 			"job":{"type":"runjs","target":"https://jdsharedresourcescdn.azureedge.net/jdresource/jd_speed.js"}},
-		{
-			"name":"京东极速版红包",
-			"type":"cron",
-			"time":"0 0 * * *",
-			"job":{"type":"runjs","target":"https://jdsharedresourcescdn.azureedge.net/jdresource/jd_speed_redpocke.js"}},
 		{
 			"name":"京东极速版",
 			"type":"cron",
