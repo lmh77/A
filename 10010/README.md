@@ -1,8 +1,8 @@
-## 中国联通
+## 中国联通(部分失效，无限期修整)
 ## 查询流量礼包
 ## 查询积分
 ## 查询流量详细用量
-## 营业厅我的礼包兑换1G日包
+## 营业厅我的礼包兑换5G日包
 ## header获取点主页进已用流量，查明细即可获取
 ## 配置 (Loon)
 ```properties
@@ -14,7 +14,7 @@ http-request ^https?:\/\/m.client.10010.com\/mobileservicequery\/operationservic
 cron "55 23 * * *" script-path=https://raw.githubusercontent.com/lmh77/A/main/10010/querygif.js,enabled=true, tag=流量礼包
 cron "55 23 * * *" script-path=https://raw.githubusercontent.com/lmh77/A/main/10010/queryjf.js,enabled=true, tag=查询积分
 cron "55 23 * * *" script-path=https://raw.githubusercontent.com/lmh77/A/main/10010/queryll.js,enabled=true, tag=查询流量用量
-cron "0 0 * * *" script-path=https://raw.githubusercontent.com/lmh77/A/main/10010/exchange.js,enabled=true, tag=兑换1G日包
+cron "0 0 * * *" script-path=https://raw.githubusercontent.com/lmh77/A/main/10010/exchange5g.js,enabled=true, tag=兑换5G日包
 ```
 
 ## 配置 (QuanX)
@@ -30,7 +30,7 @@ hostname = m.client.10010.com
 55 23 * * * https://raw.githubusercontent.com/lmh77/A/main/10010/querygif.js, tag=流量礼包, enabled=true
 55 23 * * * https://raw.githubusercontent.com/lmh77/A/main/10010/queryjf.js, tag=查询积分, enabled=true
 55 23 * * * https://raw.githubusercontent.com/lmh77/A/main/10010/queryll.js, tag=查询流量用量, enabled=true
-0 0 * * * https://raw.githubusercontent.com/lmh77/A/main/10010/exchange.js, tag=兑换1G日包, enabled=true
+0 0 * * * https://raw.githubusercontent.com/lmh77/A/main/10010/exchange5g.js, tag=兑换5G日包, enabled=true
 
 
 ```
