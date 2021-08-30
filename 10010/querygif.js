@@ -12,17 +12,20 @@ function run() {
     };
     lmh.get(request1, function (error, response, data) {
         try {
+//lmh.log(data)
             query_result = data
                 .replace(/<(style|script|iframe)[^>]*?>[\s\S]+?<\/\1\s*>/gi, "")
                 .replace(/<[^>]+?>/g, "")
                 .replace(/\s+/g, " ")
                 .replace(/ /g, "")
                 .replace(/>/g, "");
+//lmh.log(query_result)
 
-            MB_result = query_result.match(/奖品详情兑换兑换规则(\S*)明细每日可兑换/)[1];
-            day = MB_result.match(/日流量(\S*)MB多日流量/)[1];
-            week = MB_result.match(/多日流量(\S*)月流量/)[1];
-            mon = MB_result.match(/月流量(\S*)流量/)[1];
+            MB_result = query_result.match(/奖品详情兑换兑换规则(\S*)流量明细累计获取/)[1];
+lmh.log(MB_result)
+            day = MB_result.match(/日流量(\S*)MB本月到期日流量/)[1];
+            week = MB_result.match(/多日流量(\S*)本月到期多日流量/)[1];
+            mon = MB_result.match(/月流量(\S*)本月到期月流量/)[1];
             result =
             "💵    待兑换:" + "\n" +
             "🥇    日流量:" + day + "MB\n" +
