@@ -1,0 +1,29 @@
+host-suffix,1conan.com,PROXY
+host-suffix,apptapp.me,PROXY
+host-suffix,apptapp.me,PROXY
+host-suffix,thebigboss.org,PROXY
+host-suffix,bingner.com,PROXY
+host-suffix,chariz.com,PROXY
+host-suffix,dynastic.co,PROXY
+host-suffix,hackyouriphone.org,PROXY
+host-suffix,havoc.app,PROXY
+host-suffix,ccydia.top,PROXY
+host-suffix,github.io,PROXY
+host-suffix,hackyouriphone.org,PROXY
+host-suffix,julioverne.github.io,PROXY
+host-suffix,akemi.ai,PROXY
+host-suffix,co.kr,PROXY
+host-suffix,modmyi.com,PROXY
+host-suffix,packix.com,PROXY
+host-suffix,sailyteam.github.io,PROXY
+host-suffix,getsileo.app,PROXY
+host-suffix,tigisoftware.com,PROXY
+host-suffix,twickd.com,PROXY
+host-suffix,udevsharold.github.io,PROXY
+host-suffix,yourepo.com,PROXY
+host-suffix,getzbra.com,PROXY
+host-suffix,zodttd.com,PROXY
+
+host-keyword, altstore*, 全球加速
+host-suffix, developerservices2.apple.com, 全球加速
+host-suffix, gsa.apple.com, 全球加速
